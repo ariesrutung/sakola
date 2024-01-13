@@ -15,6 +15,8 @@ class Dashboard extends CI_Controller
 
     public function index()
     {
+
+
         $judul = [
             'title' => 'Dashboard',
             'sub_title' => ''
@@ -83,6 +85,12 @@ class Dashboard extends CI_Controller
 
         $data['pengajuan'] = [$januari3, $februari3, $maret3, $april3, $mei3, $juni3, $juli3, $agustus3, $september3, $oktober3, $november3, $desember3];
 
+        $data['gender_data'] = $this->dashboard->get_jk_data();
+        $data['suku'] = $this->dashboard->get_suku_data();
+        $data['jurusan'] = $this->dashboard->get_jurusan_data();
+        $data['jenissmta'] = $this->dashboard->get_jenissmta_data();
+
+        $data['prodi'] = $this->dashboard->get_pilihanprodi_data();
 
         $data2['pengajuan_terbaru'] = $this->dashboard->get_5_pengajuan_terbaru();
         $data2['penduduk_terbaru'] = $this->dashboard->get_5_penduduk_terbaru();

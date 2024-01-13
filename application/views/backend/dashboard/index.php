@@ -172,15 +172,16 @@
             </div>
         </div>
     </div>
+
     <div class="row mt-4">
         <div class="col-lg-4 mb-lg-0 mb-4">
             <div class="card z-index-2 h-100">
                 <div class="card-header pb-0 pt-3 bg-transparent">
-                    <h6 class="text-capitalize">Surat Masuk</h6>
+                    <h6 class="text-capitalize">Perbandingan Siswa by Jenis Kelamin</h6>
                 </div>
                 <div class="card-body p-3">
                     <div class="chart">
-                        <canvas id="myCharts"></canvas>
+                        <canvas id="genderChart" width="350"></canvas>
                     </div>
                 </div>
             </div>
@@ -188,28 +189,56 @@
         <div class="col-lg-4">
             <div class="card z-index-2 h-100">
                 <div class="card-header pb-0 pt-3 bg-transparent">
-                    <h6 class="text-capitalize">Surat Keluar</h6>
+                    <h6 class="text-capitalize">Perbandingan Siswa by Suku</h6>
                 </div>
                 <div class="card-body p-3">
                     <div class="chart">
-                        <canvas id="myCharts1"></canvas>
+                        <canvas id="sukuChart" width="350"></canvas>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 mb-lg-0 mb-4">
             <div class="card z-index-2 h-100">
                 <div class="card-header pb-0 pt-3 bg-transparent">
-                    <h6 class="text-capitalize">Surat Keterangan</h6>
+                    <h6 class="text-capitalize">Perbandingan Siswa by Jenis SMTA</h6>
                 </div>
                 <div class="card-body p-3">
                     <div class="chart">
-                        <canvas id="myCharts2"></canvas>
+                        <canvas id="jenissmtaChart" width="350"></canvas>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="row mt-4">
+        <div class="col-lg-7 mb-lg-0 mb-4">
+            <div class="card z-index-2 h-100">
+                <div class="card-header pb-0 pt-3 bg-transparent">
+                    <h6 class="text-capitalize">Perbandingan Siswa by Program Studi Pilihan I</h6>
+                </div>
+                <div class="card-body p-3">
+                    <div class="chart">
+                        <canvas id="pilihanprodiChart" width="350"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 ">
+            <div class="card z-index-2 h-100">
+                <div class="card-header pb-0 pt-3 bg-transparent">
+                    <h6 class="text-capitalize">Perbandingan Siswa by Jurusan SMTA</h6>
+                </div>
+                <div class="card-body p-3">
+                    <div class="chart">
+                        <canvas id="jurusanChart" width="350"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="row mt-4">
         <div class="col-lg-7 mb-lg-0 mb-4">
             <div class="card ">
