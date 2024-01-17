@@ -3,37 +3,6 @@
 <script src="<?= base_url() ?>assets/argon/assets/js/plugins/perfect-scrollbar.min.js"></script>
 <script src="<?= base_url() ?>assets/argon/assets/js/plugins/smooth-scrollbar.min.js"></script>
 <script src="<?= base_url() ?>assets/argon/assets/js/plugins/chartjs.min.js"></script>
-<!-- 
-<script>
-    var jeniskelaminData = <?php echo json_encode($gender_data); ?>;
-
-    var labels = [];
-    var data = [];
-
-    for (var i = 0; i < jeniskelaminData.length; i++) {
-        labels.push(jeniskelaminData[i].jeniskelamin);
-        data.push(jeniskelaminData[i].total);
-    }
-    var ctx = document.getElementById('genderChart').getContext('2d');
-    var myPieChart = new Chart(ctx, {
-        type: 'pie',
-        data: {
-            labels: labels,
-            datasets: [{
-                data: data,
-                backgroundColor: [
-                    'rgba(54, 162, 235, 0.7)',
-                    'rgba(255, 99, 132, 0.7)',
-                    'rgba(153, 102, 255, 0.7)',
-                    'rgba(75, 192, 192, 0.7)',
-                    'rgba(255, 206, 86, 0.7)',
-                ],
-            }]
-        },
-        options: {}
-    });
-</script> -->
-
 <script>
     var jeniskelaminData = <?php echo json_encode($gender_data); ?>;
 

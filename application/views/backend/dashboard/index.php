@@ -92,6 +92,17 @@
     .table th {
         padding: 10px;
     }
+
+    canvas {
+        width: 85% !important;
+        height: auto !important;
+    }
+
+    .chart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 </style>
 <div class="container-fluid py-4">
     <div class="row">

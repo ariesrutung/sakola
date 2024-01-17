@@ -58,6 +58,9 @@
                         <ul>
                             <li><a href="<?= base_url('/'); ?>frontend/profil" <?php if ($this->uri->segment(2) == "profil") {
                                                                                     echo 'class="active"';
+                                                                                } ?>>Profil</a></li>
+                            <li><a href="<?= base_url('/'); ?>frontend/sejarah" <?php if ($this->uri->segment(2) == "sejarah") {
+                                                                                    echo 'class="active"';
                                                                                 } ?>>Sejarah Sekolah</a></li>
                             <li><a href="<?= base_url('/'); ?>frontend/sambutan" <?php if ($this->uri->segment(2) == "sambutan") {
                                                                                         echo 'class="active"';

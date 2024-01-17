@@ -128,13 +128,13 @@
                 </li>
 
                 <li class="nav-item">
-                    <a data-bs-toggle="collapse" href="#manajemenWebsite" class="nav-link <?php echo ($this->uri->segment(2) == 'informasi' || $this->uri->segment(2) == 'tambah_informasi' || $this->uri->segment(2) == 'edit_informasi' || $this->uri->segment(2) == 'slider' || $this->uri->segment(3) == 'tambah_slider' || $this->uri->segment(3) == 'edit_slider' || $this->uri->segment(2) == 'portofolio' || $this->uri->segment(3) == 'tambah_portofolio' || $this->uri->segment(3) == 'edit_portofolio' || $this->uri->segment(2) == 'tatakerja' || $this->uri->segment(3) == 'tambah_tatakerja' || $this->uri->segment(3) == 'edit_tatakerja' || $this->uri->segment(2) == 'profil' || $this->uri->segment(2) == 'tambah_profil' || $this->uri->segment(2) == 'edit_profil') ? 'active bg-light' : ''; ?>" aria-controls="manajemenWebsite" role="button" aria-expanded="false">
+                    <a data-bs-toggle="collapse" href="#manajemenWebsite" class="nav-link <?php echo ($this->uri->segment(2) == 'informasi' || $this->uri->segment(2) == 'tambah_informasi' || $this->uri->segment(2) == 'edit_informasi' || $this->uri->segment(2) == 'slider' || $this->uri->segment(3) == 'tambah_slider' || $this->uri->segment(3) == 'edit_slider' || $this->uri->segment(2) == 'portofolio' || $this->uri->segment(3) == 'tambah_portofolio' || $this->uri->segment(3) == 'edit_portofolio' || $this->uri->segment(2) == 'tatakerja' || $this->uri->segment(3) == 'tambah_tatakerja' || $this->uri->segment(3) == 'edit_tatakerja' || $this->uri->segment(2) == 'profil' || $this->uri->segment(2) == 'tambah_profil' || $this->uri->segment(2) == 'edit_profil' || $this->uri->segment(2) == 'identitas' || $this->uri->segment(2) == 'tambah_identitas' || $this->uri->segment(2) == 'edit_identitas') ? 'active bg-light' : ''; ?>" aria-controls="manajemenWebsite" role="button" aria-expanded="false">
                         <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
                             <i class="ni ni-world text-info text-sm opacity-10"></i>
                         </div>
                         <span class="nav-link-text ms-1">Manajemen Website</span>
                     </a>
-                    <div class="collapse <?php echo ($this->uri->segment(2) == 'informasi' || $this->uri->segment(2) == 'tambah_informasi' || $this->uri->segment(2) == 'edit_informasi' || $this->uri->segment(2) == 'slider' || $this->uri->segment(3) == 'tambah_slider' || $this->uri->segment(3) == 'edit_slider' || $this->uri->segment(2) == 'portofolio' || $this->uri->segment(3) == 'tambah_portofolio' || $this->uri->segment(3) == 'edit_portofolio' || $this->uri->segment(2) == 'tatakerja' || $this->uri->segment(3) == 'tambah_tatakerja' || $this->uri->segment(3) == 'edit_tatakerja' || $this->uri->segment(2) == 'profil' || $this->uri->segment(2) == 'tambah_profil' || $this->uri->segment(2) == 'edit_profil') ? 'show' : ''; ?>" id="manajemenWebsite">
+                    <div class="collapse <?php echo ($this->uri->segment(2) == 'informasi' || $this->uri->segment(2) == 'tambah_informasi' || $this->uri->segment(2) == 'edit_informasi' || $this->uri->segment(2) == 'slider' || $this->uri->segment(3) == 'tambah_slider' || $this->uri->segment(3) == 'edit_slider' || $this->uri->segment(2) == 'portofolio' || $this->uri->segment(3) == 'tambah_portofolio' || $this->uri->segment(3) == 'edit_portofolio' || $this->uri->segment(2) == 'tatakerja' || $this->uri->segment(3) == 'tambah_tatakerja' || $this->uri->segment(3) == 'edit_tatakerja' || $this->uri->segment(2) == 'profil' || $this->uri->segment(2) == 'tambah_profil' || $this->uri->segment(2) == 'edit_profil' || $this->uri->segment(2) == 'identitas' || $this->uri->segment(2) == 'tambah_identitas' || $this->uri->segment(2) == 'edit_identitas') ? 'show' : ''; ?>" id="manajemenWebsite">
                         <ul class="nav ms-4">
                             <li class="nav-item">
                                 <a class="nav-link <?php echo ($this->uri->segment(2) == 'informasi' || $this->uri->segment(2) == 'tambah_informasi' || $this->uri->segment(2) == 'edit_informasi') ? 'active' : ''; ?>" href="<?= base_url('admin/informasi') ?>">
@@ -159,6 +159,11 @@
                             <li class="nav-item">
                                 <a class="nav-link <?php echo ($this->uri->segment(2) == 'profil' || $this->uri->segment(2) == 'tambah_profil' || $this->uri->segment(2) == 'edit_profil') ? 'active' : ''; ?>" href="<?= base_url('admin/profil') ?>">
                                     <span class="nav-link-text ms-1">Profil</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link <?php echo ($this->uri->segment(2) == 'identitas' || $this->uri->segment(2) == 'tambah_identitas' || $this->uri->segment(2) == 'edit_identitas') ? 'active' : ''; ?>" href="<?= base_url('admin/identitas') ?>">
+                                    <span class="nav-link-text ms-1">Identitas Sekolah</span>
                                 </a>
                             </li>
                         </ul>
@@ -241,7 +246,7 @@
                         </li>
                         <li class="nav-item px-3 d-flex align-items-center">
                             <a href="<?= base_url('/') ?>" target="_blank" class="btn btn-info">
-                                <i class="bi bi-globe fixed-plugin-button-nav cursor-pointer mx-2"></i> Kunjungi Web
+                                <i class="bi bi-globe fixed-plugin-button-nav cursor-pointer mx-2"></i>
                             </a>
                         </li>
 
